@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link href="fonts/Mojangles.ttf" rel="stylesheet">
+	<title>Bedrock Dev</title>
+	<style type="text/css">
+		@media screen and (max-width: 800px) {
+			.logo2 {
+				width: 80%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<h1><a style="color: black; text-decoration: none;" href="index.html">Bedrock Dev</a></h1>
+	</nav>
+	<div class="logo" style="text-align: center;"><br><br>
+		<img class="logo2" src="img/title.png" width="30%">
+	</div><br><br>
+	<div class="inputs">
+		<div class="namepack"><br>
+			<label style="text-transform: none;" for="nombre">Pack name:</label><br>
+			<input type="text" placeholder="Name" id="namepack" name="namepack">
+		</div>
+		<div class="descriptionpack">
+			<label style="text-transform: none;" for="nombre">Pack description:</label><br>
+			<input type="text" id="descriptionpack" placeholder="Description" name="descriptionpack">
+		</div>
+		<div style="text-transform: none; text-align: left;" class="labels">
+			<h4 style="text-transform: none; letter-spacing: 0.5px; font-weight: normal;">Script-API</h4><p style="text-transform: none;">Enables ScriptAPI</p><br>
+			<label for="toggle" class="switch">
+  			<input id="toggle" type="checkbox">
+  			<span class="slider"></span>
+			</label>
+		</div>
+
+	</div>
+	<div class="codes">
+		<div class="box3">
+			<pre><code id="bp">
+
+			</code></pre>
+		</div>
+		<div class="box3">
+			<pre><code id="rp">
+
+			</code></pre>
+		</div>
+	</div>
+</body>
+
+</html>

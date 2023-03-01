@@ -1,0 +1,267 @@
+@font-face {
+  font-family: 'mojangles';
+  src: url('fonts/Mojangles.ttf') format('truetype');
+  font-style: normal;
+}
+
+* {
+	cursor: url('cursor/MInecraft Dungeons Cursor A.cur'), default !important;
+	text-transform: uppercase;
+	margin: 0px;
+	font-family: 'mojangles';
+}
+
+a {
+	cursor: url('cursor/MInecraft Dungeons Cursor A.cur'), default;
+}
+
+body {
+	cursor: url('cursor/MInecraft Dungeons Cursor A.cur'), default;
+	background-color: #666666;
+}
+.container {
+	margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+nav {
+	background-color: #E6E8EB;
+	border-bottom: 5px solid #B1B2B5;
+	text-align: center;
+	padding: 10px;
+}
+nav h1 {
+	color: #000000;
+}
+
+.box {
+  user-select: none;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(#D0D1D4 calc(100% - 5px), #58585A calc(100% - 5px));
+  border: 2px solid #000;
+  margin: 10px;
+  text-align: center;
+  font-size: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box img {
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.box:hover {
+	color: black;
+	background: linear-gradient(#F4F6F9 calc(100% - 5px), #58585A calc(100% - 5px)) !important;
+	border: 2px solid #000 !important;
+}
+
+.box:active {
+	color: white;
+	background: linear-gradient(#3C8527 calc(100% - 5px), rgba(29,77,19,0.1) calc(100% - 5px)) !important;
+	border: 2px solid #000 !important;
+	transform: scaleY(0.95) !important;
+}
+
+.last-box {
+	user-select: none;
+  width: 640px;
+  height: 200px;
+  background: linear-gradient(#D0D1D4 calc(100% - 5px), #58585A calc(100% - 5px));
+  border: 2px solid #000;
+  margin: 10px;
+  text-align: center;
+  font-size: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.last-box:hover {
+	color: black;
+	background: linear-gradient(#F4F6F9 calc(100% - 5px), #58585A calc(100% - 5px)) !important;
+	border: 2px solid #000 !important;
+}
+
+.last-box:active {
+	color: white;
+	background: linear-gradient(#3C8527 calc(100% - 5px), rgba(29,77,19,0.1) calc(100% - 5px)) !important;
+	border: 2px solid #000 !important;
+	transform: scaleY(0.95) !important;
+}
+
+.market {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch {
+cursor: url('cursor/MInecraft Dungeons Cursor A.cur'), default;
+		border: 2px solid black;
+		position: relative;
+		display: inline-block;
+		width: 70px;
+		height: 34px;
+	}
+.labels {
+	text-align: center;
+}
+
+	.switch input { 
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+	.slider {
+		cursor: url('cursor/MInecraft Dungeons Cursor A.cur'), default;
+		border: 0px solid black;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #7e7e81;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+	.slider:before {
+		background-color: white;
+		top: -9px;
+		border: 2px solid black;
+		border-bottom: 5px solid#58585A;
+		position: absolute;
+		content: "";
+		height: 36px;
+		width: 36px;
+		left: -4px;
+		bottom: 4px;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+
+	input:checked + .slider {
+		background-color: #3C8527;
+	}
+
+	input:focus + .slider {
+		box-shadow: 0 0 1px #3C8527;
+	}
+
+	input:checked + .slider:before {
+		-webkit-transform: translateX(36px);
+		-ms-transform: translateX(36px);
+		transform: translateX(36px);
+	}
+
+.box3 {
+	padding: 10px;
+	text-transform: lowercase;
+  user-select: none;
+  width: 25%;
+  height: 400px;
+  background: #313233;
+  border: 2px solid #000;
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+	.box3 {
+		width: 100%;
+	}
+	pre, code {
+		font-size: 10px !important;
+	}
+}
+
+pre, code {
+	width: 100%;
+	color: #52B7FF;
+	font-size: 14px;
+  border-radius: 5px;
+  padding: 5px;
+  overflow-x: auto;
+	text-transform: lowercase;
+}
+
+.codes {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3 code {
+  display: block;
+  padding: 10px;
+  white-space: pre-wrap;
+  font-size: 16px;
+}
+
+.inputs {
+	border: 2px solid black;
+	color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.namepack, .descriptionpack {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.namepack {
+	border-bottom: #323233 !important;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+	border-top: 5px solid black !important;
+	border-left: 2px solid black !important;
+	border-right: 2px solid black !important;
+	border-bottom: 2px solid black !important;
+	color: white;
+  padding: 10px;
+  border: none;
+  background-color: #313233;
+  font-size: 16px;
+  outline: none;
+}
+
+.inputs {
+  background-color: #48494A;
+  padding: 10px;
+  max-width: 15%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+	.inputs {
+		max-width: 90%;
+	}
+}
